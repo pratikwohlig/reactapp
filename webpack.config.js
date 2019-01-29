@@ -17,7 +17,17 @@ module.exports = {
            exclude: /node_modules/,
            loader: 'babel-loader',
            query: {"presets":["env", "react"]}
-        }, {
+        },
+	    {
+	        test: /\.(png|jpg|gif)$/,
+	        use: [
+	          {
+	            loader: 'file-loader',
+	            options: {}
+	          }
+	        ]
+	    },
+        {
           test: /\.(css|scss)$/,
            use: ['style-loader', 'css-loader']
         } 
@@ -26,6 +36,6 @@ module.exports = {
     plugins:[
         new HWP(
            {template: path.join(__dirname,'./src/index.html')}
-        )
+        ),
     ]
 }
