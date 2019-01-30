@@ -7,9 +7,9 @@ import NoMatch from '../components/NoMatch';
 import Layout from '../components/Layout';
 
 class App extends Component {
+
   render() {
     return (
-    	
       		<Router history={hashHistory}>
  				<Layout>
  				<Switch>
@@ -19,8 +19,7 @@ class App extends Component {
 	    		</Switch>
 	    		</Layout>
       		</Router>
-      	
     )
   }
 }
-export default App
+export default (App)
