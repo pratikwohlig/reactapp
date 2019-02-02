@@ -1,3 +1,4 @@
+import 'animate.css/animate.min.css';
 import 'bootstrap/dist/css/bootstrap.css';
 import $ from 'jquery';
 import Popper from 'popper.js';

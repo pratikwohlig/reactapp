@@ -1,6 +1,5 @@
 const path = require('path');
 const HWP = require('html-webpack-plugin');
-console.log(path.join(__dirname, './src/index.js'));
 module.exports = {
     entry: './src/index.js',
     output: {
@@ -23,13 +22,15 @@ module.exports = {
 	        use: [
 	          {
 	            loader: 'file-loader',
-	            options: {}
+	            options: {
+                name: '[path][name]-[hash:8].[ext]'
+              },
 	          }
 	        ]
 	    },
         {
           test: /\.(css|scss)$/,
-           use: ['style-loader', 'css-loader']
+           use: ['style-loader', 'css-loader',"sass-loader" ]
         } 
         ]
     },

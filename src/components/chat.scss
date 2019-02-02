@@ -1,0 +1,40 @@
+#chat_window_1 {
+    position: fixed;
+    bottom: 0;
+    right: 12px;
+    width: 30%;
+    box-shadow: 0 5px 35px 9px #ccc;
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+    background: #fff;
+}
+#chat-circle {
+    z-index: 1;
+    position: fixed;
+    bottom: 5px;
+    right: 10px;
+    display: block;
+    background: #47258F;
+    width: 60px;
+    height: 60px;
+    border: 0;
+    border-radius: 100%;
+    transition: box-shadow 200ms ease;
+    cursor: pointer;
+    cursor: pointer;
+    box-shadow: 0 3px 16px 0 rgba(0,0,0,.6), 0 3px 1px -2px rgba(0,0,0,.2), 0 1px 5px 0 rgba(0,0,0,.12);
+    .clickImage {
+	    z-index: 10;
+	    cursor: pointer;
+	    position: absolute;
+	    top: 50%;
+	    left: 50%;
+	    -webkit-transform: translate(-50%,-50%);
+	    transform: translate(-50%,-50%);
+	    -webkit-transform-origin: top left;
+	    transform-origin: top left;
+	    max-width: 100%;
+	    width: 32px;
+	    height: 36px;
+	}
+}

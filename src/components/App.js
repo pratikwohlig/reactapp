@@ -7,7 +7,7 @@ import NoMatch from '../components/NoMatch';
 import Layout from '../components/Layout';
 
 class App extends Component {
-
+  
   render() {
     return (
       		<Router history={hashHistory}>

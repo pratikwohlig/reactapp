@@ -1,8 +1,10 @@
 import React from "react";
+import Chat from '../components/Chat';
 
 class Home extends React.Component {
     render(){
-        return <div className="container">ho</div>
+        return <Chat >
+        </Chat>
     }
 }
 export default Home
