@@ -1,4 +1,5 @@
 import React, {Component} from "react";
+import $ from 'jquery';
 import './chat.scss';
 import logo from '../static/img/launcher_icon.png';
 import WOW from "wowjs";
@@ -9,6 +10,7 @@ class Chat extends React.Component {
     	super(props);
     	this.state = {};
 	    this.state.showChat = false;
+	    this.showChatwindow = this.showChatwindow.bind(this);
 	}
 	componentDidMount() {
 	    const wow = new WOW.WOW();
